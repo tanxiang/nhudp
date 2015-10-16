@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">bhconfig</string>
-    <string name="work_mode">work mode config</string>
-    <string name="host_redirection">redirection config</string>
-    <string name="proxy_server">server config</string>
+    <string name="app_name">config</string>
+    <string name="configs">configs</string>
+    <string name="work_mode">work mode</string>
+    <string name="domain_redirect">domain redirect</string>
+    <string name="proxy_config">proxy config</string>
+    <string name="redirect_and_proxy">redirect + proxy</string>
     <string name="test">test</string>
 </resources>

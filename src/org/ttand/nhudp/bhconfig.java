@@ -12,6 +12,7 @@ public class bhconfig extends PreferenceActivity
     {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.main);
-        addPreferencesFromResource(R.xml.pref);  
+        addPreferencesFromResource(R.xml.pref);
+        getPreferenceScreen().setOrderingAsAdded(true);
     }
 }

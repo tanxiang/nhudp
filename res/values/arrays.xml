@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="modes">
+        <item> @string/domain_redirect </item>
+        <item> @string/proxy_config </item>
+        <item> @string/redirect_and_proxy </item>
+    </string-array>
+
     <string-array name="test">
         <item>1</item>
         <item>2</item>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
-            android:title="@string/work_mode">
+            android:title="@string/configs">
         <org.ttand.nhudp.preferences
-                android:defaultValue="1"
-                android:key="encMethod"
-                android:entries="@array/test"
-                android:entryValues="@array/test"
-                android:title="@string/test">
+                android:defaultValue="@string/domain_redirect"
+                android:key="work_mode"
+                android:entries="@array/modes"
+                android:entryValues="@array/modes"
+                android:title="@string/work_mode">
         </org.ttand.nhudp.preferences>
 
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:title="@string/host_redirection">
+            android:title="@string/domain_redirect">
         <org.ttand.nhudp.preferences
                 android:defaultValue="1"
                 android:key="encMethod1"
@@ -24,7 +24,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:title="@string/proxy_server">
+            android:title="@string/proxy_config">
         <org.ttand.nhudp.preferences
                 android:defaultValue="1"
                 android:key="encMethod2"
