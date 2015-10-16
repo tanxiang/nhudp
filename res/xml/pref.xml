@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/work_mode">
+        <org.ttand.nhudp.preferences
+                android:defaultValue="1"
+                android:key="encMethod"
+                android:entries="@array/test"
+                android:entryValues="@array/test"
+                android:title="@string/test">
+        </org.ttand.nhudp.preferences>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/host_redirection">
+        <org.ttand.nhudp.preferences
+                android:defaultValue="1"
+                android:key="encMethod1"
+                android:entries="@array/test"
+                android:entryValues="@array/test"
+                android:title="@string/test">
+        </org.ttand.nhudp.preferences>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/proxy_server">
+        <org.ttand.nhudp.preferences
+                android:defaultValue="1"
+                android:key="encMethod2"
+                android:entries="@array/test"
+                android:entryValues="@array/test"
+                android:title="@string/test">
+        </org.ttand.nhudp.preferences>
+    </PreferenceCategory>
+
+</PreferenceScreen>

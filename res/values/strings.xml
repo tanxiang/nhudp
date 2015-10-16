@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">bhconfig</string>
+    <string name="work_mode">work mode config</string>
+    <string name="host_redirection">redirection config</string>
+    <string name="proxy_server">server config</string>
+    <string name="test">test</string>
 </resources>
