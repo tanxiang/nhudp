@@ -3,6 +3,7 @@ package org.ttand.nhudp;
 import android.app.Activity;
 import android.preference.PreferenceActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
 public class bhconfig extends PreferenceActivity
 {
@@ -15,4 +16,11 @@ public class bhconfig extends PreferenceActivity
         addPreferencesFromResource(R.xml.pref);
         getPreferenceScreen().setOrderingAsAdded(true);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
 }
