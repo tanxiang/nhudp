@@ -9,12 +9,10 @@
       android:targetSdkVersion="23" />
 
     <application android:label="@string/app_name"
-            android:hardwareAccelerated="@bool/useHardwareAcceleration"
             android:icon="@drawable/ic_launcher"
             android:theme="@style/Theme">
         <activity android:name=".bhconfig"
                 android:label="@string/app_name"
-                android:hardwareAccelerated="@bool/useHardwareAcceleration"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
