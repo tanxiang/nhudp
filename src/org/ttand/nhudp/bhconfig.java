@@ -32,12 +32,14 @@ public class bhconfig extends PreferenceActivity
     @Override
     protected boolean isValidFragment(String fragmentName)
     {
-        Log.i("args", "isValidFragment: " + fragmentName + "\t" + Prefs1Fragment.class.getName());
+        //Log.i("args", "isValidFragment: " + fragmentName + "\t" + ProfilesFragment.class.getName());
 
-        return Prefs1Fragment.class.getName().equals(fragmentName);
+        return ProfilesFragment.class.getName().equals(fragmentName)||
+               RedirectFragment.class.getName().equals(fragmentName)||
+               TunnelFragment.class.getName().equals(fragmentName);
     }
 
-    public static class Prefs1Fragment extends PreferenceFragment {
+    public static class ProfilesFragment extends PreferenceFragment {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -48,4 +50,25 @@ public class bhconfig extends PreferenceActivity
         }
     }
 
+    public static class RedirectFragment extends PreferenceFragment {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            PreferenceManager.setDefaultValues(getActivity(),
+                    R.xml.pref, false);
+            // Load the preferences from an XML resource
+            addPreferencesFromResource(R.xml.pref);
+        }
+    }
+
+    public static class TunnelFragment extends PreferenceFragment {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            PreferenceManager.setDefaultValues(getActivity(),
+                    R.xml.pref, false);
+            // Load the preferences from an XML resource
+            addPreferencesFromResource(R.xml.pref);
+        }
+    }
 }

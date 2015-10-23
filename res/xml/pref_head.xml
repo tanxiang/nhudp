@@ -1,16 +1,21 @@
 <preference-headers
         xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <header android:fragment="org.ttand.nhudp.bhconfig$Prefs1Fragment"
-            android:icon="@drawable/ic_launcher"
-            android:title="Prefs 1"
-            android:summary="An example of some preferences." />
+    <header android:fragment="org.ttand.nhudp.bhconfig$ProfilesFragment"
+            android:icon="@drawable/ic_profiles"
+            android:title="profiles"
+            android:summary="An example of some profiles." />
 
-    <header android:icon="@drawable/ic_launcher"
-            android:title="Intent"
-            android:summary="Launches an Intent.">
-        <intent android:action="android.intent.action.VIEW"
-                android:data="http://www.android.com" />
+    <header android:fragment="org.ttand.nhudp.bhconfig$RedirectFragment"
+            android:icon="@drawable/ic_redirect"
+            android:title="redirect domain"
+            android:summary="redirect domain to host">
+    </header>
+
+    <header android:fragment="org.ttand.nhudp.bhconfig$TunnelFragment"
+            android:icon="@drawable/ic_tunnel"
+            android:title="dump raw data"
+            android:summary="dump network data to host">
     </header>
 
 </preference-headers>
